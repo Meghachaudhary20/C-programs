@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int X[10],i,j,temp,pass;
+    printf("Enter a set of numbers");
+    for(i=0;i<10;i++)
+    {
+        scanf("%d",&X[i]);
+    }
+    for(pass=1;pass<10;pass++)
+    {
+        for(j=0;j<3;j++)
+        {
+            if(X[j]< X[j+1])
+            {
+                temp=X[j+1];
+                X[j+1]=X[j];
+                X[j]=temp;
+            }
+        }
+    }
+        for(i=0;i<10;i++){
+        printf("%d",X[i]);
+        
+        
+    }
+}
